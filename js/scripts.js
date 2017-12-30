@@ -12,6 +12,20 @@ button.onclick =function(){
     button.innerHTML="SHOW LESS";
   }
 };
+var con= document.getElementById("con");
+var button= document.getElementById("showmore");
+button.onclick =function(){
+  if (con.className == "open") {
+    //shrink the box
+    con.className="";
+    button.innerHTML="SHOW MORE";
+  }
+  else {
+    //expand the box
+    con.className="open";
+    button.innerHTML="SHOW LESS";
+  }
+};
 $(document).ready(function(){
   $("button").click(function(){
     var box= document.getElementById("email");

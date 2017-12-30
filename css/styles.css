@@ -139,6 +139,12 @@ button{
   margin: 0 auto;
 
 }
+#cockcrouch{
+  display: block;
+  width: 400px;
+  height: auto;
+  margin: 0 auto;
+}
 /* ONCLICK EVENT*/
 #content{
   width: 400px;
@@ -163,6 +169,40 @@ button{
   transition: max-height 0.7s;
 }
 #show-more{
+  background: #1594e5;
+  color: #fff;
+  font-size: 24px;
+  display: block;
+  width: 140px;
+  text-transform: uppercase;
+  padding: 10px;
+  text-align: center;
+  margin: 20px auto;
+  cursor: pointer;
+}
+#con{
+  width: 400px;
+  background: #fff;
+  padding: 20px;
+  padding-top: 0;
+  font-size: 18px;
+  color: #444;
+  margin: 0 auto;
+  max-height: 270px;
+  overflow: hidden;
+/*set transition up*/
+  -webkit-transtion:max-height 0.7s;
+  -moz-transition:max-height 0.7s;
+  transition: max-height 0.7s
+}
+#con.open{
+  max-height: 1200px;
+/*set transition up*/
+  -webkit-transtion:max-height 0.7s;
+  -moz-transition:max-height 0.7s;
+  transition: max-height 0.7s;
+}
+#showmore{
   background: #1594e5;
   color: #fff;
   font-size: 24px;
