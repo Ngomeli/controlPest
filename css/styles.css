@@ -14,6 +14,17 @@ nav ul{
   padding: 0;
 }
 
+nav input {
+  margin: 10px;
+  font-size: 20px;
+  display: block;
+  margin: auto;
+}
+
+.search {
+  margin: 10px;
+}
+
 nav a{
   text-decoration: none;
   text-align: center;
@@ -32,6 +43,10 @@ nav a.current{
   nav ul{
     display: flex;
     justify-content: flex-end;
+  }
+
+  .col-12 > img {
+    width: 25%;
   }
 }
 #navbar ul {
@@ -132,19 +147,6 @@ button{
   70%{transform: translateY(700px);}
   100%{transform: translateY(650px);opacity: 1;}
 }
-#mosquito{
-  display: block;
-  width: 400px;
-  height: auto;
-  margin: 0 auto;
-
-}
-#cockcrouch{
-  display: block;
-  width: 400px;
-  height: auto;
-  margin: 0 auto;
-}
 /* ONCLICK EVENT*/
 #content{
   width: 400px;
@@ -213,4 +215,23 @@ button{
   text-align: center;
   margin: 20px auto;
   cursor: pointer;
+}
+
+
+
+.hidden {
+  display: none;
+}
+
+.col-12 > img {
+  float: right;
+  border: 20px solid #ccc;
+  width: 55%;
+  margin: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .col-12 > img {
+    width: 40%;
+  }
 }

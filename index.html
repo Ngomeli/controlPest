@@ -14,6 +14,9 @@
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
+        <div class="search">
+            <input id="search" type="text" name="search" onkeyup="search(event)" placeholder="Search"/>
+        </div>
       </nav>
       <div class="main">
         <p>Dealing with pests is not that of an easy task, but you getting into this "site" you have made a great choice. It is hard
@@ -25,14 +28,14 @@
       will.</p><strong>Here are some images of pests that we offer information on:<strong>
       </div>
 
-      <div id="images">
-        <div class="row">
-          <div class="col-md-6">
-            <img id="mosquito" src="images/mosquito.jpg" width="260" height="145">
-            <div id="content">
+      <div class="container">
+        <div class="row hidden" id="mosquito">
+          <div class="col-12">
               <h1>Controlling Mosquitoes</h1>
-              <p>As with most insect pests, the best way to control mosquitoes is to get rid of their breeding sites. This means making sure
+
+              <p>  As with most insect pests, the best way to control mosquitoes is to get rid of their breeding sites. This means making sure
                 that water is not allowed to collect in unwanted equipment and containers which are left lying around.</p>
+              <img class="push-left" src="images/mosquito.jpg">
                 <p>These containers might include:
                   <ul>
                     <li>Car bodies and panels, engine blocks and tyres.</li>
@@ -56,25 +59,37 @@ exposed skin reduces the risk of being bitten when outside
 during the biting times. Loose clothes are best because mosquitoes can bite through clothing which is tight against the skin, even jeans. Sleeping
 children and babies should be protected with mosquito nets. Insect repellent should never be used on babies – cover them with a net instead.</P>
 </div>
-<a id="show-more">SHOW MORE</a>
 </div>
-<div class="col-md-6">
-  <img id="cockcrouch" src="images/cockcrouch.jpg">
-  <div id="con">
-    <h1>Controlling Cockroaches</h1>
-    <p>Measures to be taken keep cockroaches away from living areas include:
-      <ul>
-        <li>Keep food in containers which have tightly fitting lids.</li>
-        <li>Store food handling equipment and containers up off the floor</li>
-        <li>Where possible, fill in small cracks and crevices (holes), in which cockroaches could hide. It is especially important to fill in
-          cracks and crevices around pipes in walls</li>
-        <li>Cean shelves and inside and underneath cupboards regularly. This will reduce the build-up of food particles.</li>
-        <li>hen required, apply a low toxicity liquid or gel insecticide to those areas where cockroaches may hide, especially cracks and crevices
-          inside and around the outside of buildings, behind stoves and fridges and underneath the shelves of cupboards. There are many suitable
-          insecticides that can be used to effectively control cockroaches. Before insecticides are used, people should be encouraged to regularly
-          clean in and around their houses to reduce the cockroaches’ food source. </li>
-</div>
-<a id="showmore">SHOW MORE</a>
+      <div class="row hidden text-center text-danger" id="notfound">
+        <div class="col-12">
+            <h4> Could not find pest. </h4>
+        </div>
+      </div>
+
+      <div class="row hidden" id="bedbugs">
+        <div class="col-12">
+        </div>
+      </div>
+
+
+
+      <div class="row hidden" id="cockroach">
+        <div class="col-12">
+            <h1>Controlling Cockroaches</h1>
+            <img src="images/cockcrouch.jpg">
+            <p>Measures to be taken keep cockroaches away from living areas include:
+              <ul>
+                <li>Keep food in containers which have tightly fitting lids.</li>
+                <li>Store food handling equipment and containers up off the floor</li>
+                <li>Where possible, fill in small cracks and crevices (holes), in which cockroaches could hide. It is especially important to fill in
+                  cracks and crevices around pipes in walls</li>
+                <li>Cean shelves and inside and underneath cupboards regularly. This will reduce the build-up of food particles.</li>
+                <li>hen required, apply a low toxicity liquid or gel insecticide to those areas where cockroaches may hide, especially cracks and crevices
+                  inside and around the outside of buildings, behind stoves and fridges and underneath the shelves of cupboards. There are many suitable
+                  insecticides that can be used to effectively control cockroaches. Before insecticides are used, people should be encouraged to regularly
+                  clean in and around their houses to reduce the cockroaches’ food source. </li>
+            </p>
+        </div>
       </div>
     </div>
       <div class="footer">
@@ -87,7 +102,7 @@ children and babies should be protected with mosquito nets. Insect repellent sho
         </div>
       </div>
       <div id="owner">
-        <p>&copy <strong>Joshua Ngomeli &nbsp &nbsp &nbsp 2017</strong>
+        <p>&copy; <strong>Joshua Ngomeli &nbsp; &nbsp; &nbsp; 2017</strong>
         </div>
       </div>
       <script src="js/jquery-3.2.1.js"></script>

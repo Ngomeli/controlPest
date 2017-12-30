@@ -1,31 +1,3 @@
-var content= document.getElementById("content");
-var button= document.getElementById("show-more");
-button.onclick =function(){
-  if (content.className == "open") {
-    //shrink the box
-    content.className="";
-    button.innerHTML="SHOW MORE";
-  }
-  else {
-    //expand the box
-    content.className="open";
-    button.innerHTML="SHOW LESS";
-  }
-};
-var con= document.getElementById("con");
-var button= document.getElementById("showmore");
-button.onclick =function(){
-  if (con.className == "open") {
-    //shrink the box
-    con.className="";
-    button.innerHTML="SHOW MORE";
-  }
-  else {
-    //expand the box
-    con.className="open";
-    button.innerHTML="SHOW LESS";
-  }
-};
 $(document).ready(function(){
   $("button").click(function(){
     var box= document.getElementById("email");
@@ -37,3 +9,43 @@ $(document).ready(function(){
     $("#pop-up").hide();
   });
 });
+
+
+var pests = [
+  {
+    name: 'mosquito',
+    id: '#mosquito',
+  },
+  {
+    name: 'cockroach',
+    id: '#cockroach',
+  },
+  {
+    name: 'bedbugs',
+    id: '#bedbugs',
+  }
+];
+
+function search(event) {
+  if (event.key == "Enter") {
+    var found = false;
+    var value = $('#search').val().toLowerCase();
+    $('#search').val('');
+
+    $('#notfound').fadeOut();
+    for (let i = 0; i < pests.length; ++i) {
+        $(pests[i].id).fadeOut();
+    }
+
+    for (let i = 0; i < pests.length; ++i) {
+      if(pests[i].name.indexOf(value) !== -1) {
+        $(pests[i].id).fadeIn();
+        found = true;
+      }
+    }
+
+    if (! found) {
+      $('#notfound').fadeIn();
+    }
+  }
+}
