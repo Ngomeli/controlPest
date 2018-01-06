@@ -27,6 +27,14 @@ var pests = [
   {
     name: 'mouse',
     id: '#mouse',
+  },
+  {
+    name: 'termite',
+    id: '#termite',
+  },
+  {
+    name: 'ant',
+    id: '#ant',
   }
 ];
 
