@@ -23,13 +23,19 @@ var pests = [
   {
     name: 'bedbugs',
     id: '#bedbugs',
+  },
+  {
+    name: 'mouse',
+    id: '#mouse',
   }
 ];
 
 function search(event) {
   if (event.key == "Enter") {
-    var found = false;
     var value = $('#search').val().toLowerCase();
+    if (value == '')
+      return;
+    var found = false;
     $('#search').val('');
 
     $('#notfound').fadeOut();
